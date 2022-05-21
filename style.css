@@ -5,27 +5,83 @@
 }
 
 @font-face {
-    font-family: space;
+    font-family: Space;
     src: url(assets/SpaceGrotesk-VariableFont_wght.ttf);
 }
 
+@font-face {
+    font-family: Ailerons ;
+    src: url(assets/Ailerons-Regular.otf);
+}
+
+@font-face {
+    font-family: Moon;
+    src: url(assets/Moon2.0-Regular.otf);
+}
+
 :root {
-    --color-base: #16222A;
-    --color-accent: #3A6073;
+    --color-base: #EECDA3;
+    --color-accent: #EF629F;
 }
 
 body {
-    font-family: space, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-family: ailerons, BlinkMacSystemFont, 'Segoe UI';
     height: 100vh;
     display: flex;
 }
 
 .left {
     width: 40vw;
-    background: linear-gradient(var(--color-accent), var(--color-base));
-    
-}.right {
+    background: linear-gradient(var(--color-base), var(--color-accent));
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.35s;
+}
+
+a:hover{
+    text-decoration: none;
+    color:aliceblue;
+    transition-duration: 0.35s;
+}
+
+.container {
+    font-family: ailerons, BlinkMacSystemFont, 'Segoe UI';
+    background-color: #ffffff2f;
+    border-left: black 4px solid;
+    border-bottom: black 4px solid;
+    border-radius: 30px;
+    margin: 20vh 64px;   
+    padding: 16px 0;
+    transition-duration: 0.35s;
+}
+
+.container:hover {
+    background-color: #0000003f;
+    transition-duration: 0.35s;
+}
+
+.container p {
+    font-size: 3.2rem;
+    letter-spacing: 20px;
+}
+
+img {
+    margin-right: 16px;
+    height: 5rem;
+}
+
+.credits {
+    position: absolute;
+    margin-left: 20px;
+    bottom: 10px;
+}
+
+
+.right {
     width: 60vw;
     background-color: black;
-
 }
