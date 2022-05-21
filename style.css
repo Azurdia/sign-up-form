@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: space;
+    src: url(assets/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    --color-base: #16222A;
+    --color-accent: #3A6073;
+}
+
+body {
+    font-family: space, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 40vw;
+    background: linear-gradient(var(--color-accent), var(--color-base));
+    
+}.right {
+    width: 60vw;
+    background-color: black;
+
+}
