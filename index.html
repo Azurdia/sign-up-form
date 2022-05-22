@@ -28,16 +28,16 @@
         <form method='' action="">
             <fieldset>
                 <legend>Let's Begin!</legend>
-                <label><input type="text" name="first_name" required>First Name</label>
-                <label><input type="text" name="last_name" required>Last Name </label>
-                <label><input type="email" name="email" required>Email Address</label>
-                <label><input type="tel" name>Telephone Number</label>
-                <label><input type="password" name="password1" required>Password</label>
-                <label><input type="password" name="password2" required>Confirm Password</label>
+                <label><input type="text" name="first_name" placeholder="  " required>First Name*</label>
+                <label><input type="text" name="last_name" placeholder=" " required>Last Name* </label>
+                <label><input type="email" name="email" placeholder=" " required>Email Address*</label>
+                <label><input type="tel" name="tel" placeholder=" " minlength="8" pattern = '\d'    oninvalid="setCustomValidity('Please input at least 8 numbers')">Telephone Number</label>
+                <label><input type="password" name="password1" placeholder=" " required>Password*</label>
+                <label><input type="password" name="password2" placeholder=" " required>Confirm Password*</label>
             </fieldset>
             <button type="submit">Create Account</button>
         </form>
-        <p> Already have an account? <a href = "">Log in</a></p>
+        <p> Already have an account? <a class = "existing" href = "">Log in</a></p>
     </div>    
 </body>
 </html>

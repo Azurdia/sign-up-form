@@ -5,6 +5,10 @@
     font-family: inherit
 }
 
+::selection {
+    color: var(--color-accent);
+}
+
 @font-face {
     font-family: Space;
     src: url(assets/SpaceGrotesk-VariableFont_wght.ttf);
@@ -57,7 +61,7 @@ a:hover{
     border-left: black 4px solid;
     border-bottom: black 4px solid;
     border-radius: 30px;
-    margin: 20vh 64px;   
+    margin: 18vh 64px;   
     padding: 16px 0;
     transition-duration: 0.35s;
 }
@@ -68,7 +72,7 @@ a:hover{
 }
 
 .container p {
-    font-size: 3.2rem;
+    font-size: 3rem;
     letter-spacing: 20px;
 }
 
@@ -93,7 +97,7 @@ header {
     height: 25vh;
     font-size: 1.25rem;
     padding: 0 70px 0 30px;
-    margin: 64px;
+    margin: 80px 50px 30px;
     line-height: 2rem;
 }
 
@@ -107,6 +111,15 @@ fieldset {
 legend {
     font-size: large;
 }
+
+legend::after {
+    position: absolute;
+    content: "* = required";
+    font-size: 16px;
+    top: 42vh;
+    right: 30px;
+}
+
 label {
     position: relative;
     width: 300px;
@@ -115,9 +128,16 @@ label {
 
 input {
     background-color: var(--color-base);
+    font-size: 1em;
+    letter-spacing: 1px;
     position: absolute;
     top: 25px;
     width:300px;
+}
+
+input:focus {
+    outline: none;
+    background-color: var(--color-accent);
 }
 
 button {
@@ -125,11 +145,20 @@ button {
     font-weight: 700;
     background: var(--color-base);
     border: none;
-    margin: 30px 30px 15px;
+    margin: 60px 30px 20px;
     padding: 15px;
     border-radius: 10px;
 }
 
+button:hover {
+    background-color: var(--color-accent);
+    color: white;
+}
+
 div > p {
     margin: 0 30px;
+}
+
+.existing {
+    color: var(--color-accent);
 }
